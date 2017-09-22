@@ -492,7 +492,7 @@ public class MainActivity extends AppCompatActivity
         int x = (int) (x1 * 1000);
         int y = (int) (y1 * 1000);
         int z = (int) (z1 * 1000);
-
+//
         if (mainController.getTilt()) {
             if (x > 5000) {
                 //left
