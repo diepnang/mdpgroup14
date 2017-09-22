@@ -24,13 +24,13 @@ import mdpgroup14.com.mdpapplication.entity.SendMessageAsyncTask;
 
 public class ControlFragment extends Fragment{
     public final static String TAG = "ControllFragment";
-    public static final String SHORTEST_PHASE = "run";
-    public static final String EXPLORATION_PHASE = "exploration" ;
+    public static final String SHORTEST_PHASE = "Run";
+    public static final String EXPLORATION_PHASE = "Exploration" ;
 
     private Switch switchUpdateMode;
     private TextView isAuto;
     private Button updateMap;
-    private ImageButton rightMove, leftMove, fowardMove,backwardMove;
+    private ImageButton rightMove, leftMove, forwardMove,backwardMove;
     private final String AUTO_UPDATE_OFF ="OFF";
     private final String AUTO_UPDATE_ON ="ON";
     private RadioButton exploration;
@@ -91,7 +91,7 @@ public class ControlFragment extends Fragment{
 
             }
         });
-        //find view Button moving left,right,foward,backward
+        //find view Button moving left,right,forward
         leftMove = (ImageButton) view.findViewById(R.id.btn_left_move);
         leftMove.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,8 +150,8 @@ public class ControlFragment extends Fragment{
                 }
             }
         });
-        fowardMove = (ImageButton) view.findViewById(R.id.btn_forward_move);
-        fowardMove.setOnClickListener(new View.OnClickListener() {
+        forwardMove = (ImageButton) view.findViewById(R.id.btn_forward_move);
+        forwardMove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(!mainController.isRobotFinishRunning()){
