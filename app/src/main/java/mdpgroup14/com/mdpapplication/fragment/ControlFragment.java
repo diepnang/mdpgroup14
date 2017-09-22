@@ -21,9 +21,7 @@ import mdpgroup14.com.mdpapplication.R;
 import mdpgroup14.com.mdpapplication.controller.MainController;
 import mdpgroup14.com.mdpapplication.entity.SendMessageAsyncTask;
 
-/**
- * Created by hizac on 13/2/2016.
- */
+
 public class ControlFragment extends Fragment{
     public final static String TAG = "ControllFragment";
     public static final String SHORTEST_PHASE = "run";

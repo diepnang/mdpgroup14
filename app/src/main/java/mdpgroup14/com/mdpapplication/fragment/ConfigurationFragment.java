@@ -17,9 +17,7 @@ import mdpgroup14.com.mdpapplication.R;
 import mdpgroup14.com.mdpapplication.controller.MainController;
 import mdpgroup14.com.mdpapplication.entity.SendMessageAsyncTask;
 
-/**
- * Created by hizac on 13/2/2016.
- */
+
 public class ConfigurationFragment extends Fragment{
     public final static String TAG = "ConfigurationFragment";
     private static final String SET_CMD_PREF = "Set command Preferences";

@@ -12,9 +12,7 @@ import android.widget.Button;
 import mdpgroup14.com.mdpapplication.R;
 import mdpgroup14.com.mdpapplication.controller.MainController;
 
-/**
- * Created by hizac on 13/2/2016.
- */
+
 public class BluetoothFragment extends Fragment{
     public final static String TAG = "BluetoothFragment";
     private static final int REQUEST_CONNECT_DEVICE_SECURE = 1;

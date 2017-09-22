@@ -13,9 +13,6 @@ import android.widget.Toast;
 
 import mdpgroup14.com.mdpapplication.R;
 
-/**
- * Created by nhattran on 2/18/16.
- */
 public class CommandPrefFragment  extends AppCompatDialogFragment {
     public static final String CMD_F1_DEFAULT = "command F1" ;
     public static final String CMD_F2_DEFAULT = "command F2";

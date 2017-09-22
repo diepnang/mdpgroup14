@@ -12,9 +12,6 @@ import android.widget.TextView;
 import mdpgroup14.com.mdpapplication.R;
 import mdpgroup14.com.mdpapplication.controller.MainController;
 
-/**
- * Created by nhat0 on 11/3/2016.
- */
 public class MDFStringFragment extends Fragment {
     public final static String TAG = "MDFStringFragment";
     private TextView mdf1;

@@ -22,9 +22,7 @@ import java.util.Set;
 import mdpgroup14.com.mdpapplication.R;
 import mdpgroup14.com.mdpapplication.controller.MainController;
 
-/**
- * Created by nhattran on 2/18/16.
- */
+
 public class DeviceListActivity extends Activity {
     // Debugging
     private static final String TAG = "DeviceListActivity";
