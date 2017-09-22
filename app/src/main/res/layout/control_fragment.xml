@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="40%"
+        android:id="@+id/layout_control_pad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent = "35%"
+            android:background="@drawable/control_up_selector"
+            android:id="@+id/btn_forward_move"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:layout_widthPercent ="35%"
+            app:layout_heightPercent = "50%"
+            android:id="@+id/btn_start"/>
+        <ImageButton
+            android:layout_below="@id/btn_forward_move"
+            android:layout_toLeftOf="@id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="20%"
+            android:background="@drawable/control_left_selector"
+            android:id="@+id/btn_left_move"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="20%"
+            android:id="@+id/btn_right_move"
+            android:background="@drawable/control_right_selector"
+            android:layout_toRightOf="@id/btn_start"
+            android:layout_below="@+id/btn_forward_move" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent = "35%"
+            android:id="@+id/btn_backward_move"
+            android:background="@drawable/control_down_selector"
+            android:layout_alignParentBottom="true"
+             />
+
+    </android.support.percent.PercentRelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_control_mode"
+        android:paddingTop ="4dp"
+        android:paddingLeft="16dp"
+        android:layout_toRightOf="@id/layout_control_pad">
+        <Switch
+            android:id="@+id/switch_update_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:text="Auto" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/switch_update_mode"
+            android:id="@+id/is_auto" />
+        <Button
+            android:id="@+id/btn_update_map"
+            android:text="Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/is_auto"
+            android:visibility="invisible"
+            android:layout_marginLeft="16dp" />
+        <Switch
+            android:id="@+id/switch_tilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tilt"
+            android:textColor="@color/white"
+            android:layout_below="@id/switch_update_mode"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mdf_1"
+            android:layout_toRightOf="@id/switch_tilt"
+            android:layout_below="@id/switch_update_mode"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="8sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_tilt"
+            android:text="Reset"
+            android:id="@+id/btn_reset"/>
+        <RadioGroup
+            android:layout_below="@id/btn_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/group_btn">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Exploration"
+                android:textColor="@color/white"
+                android:id="@+id/btn_exploration"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Shortest path"
+                android:textColor="@color/white"
+                android:id="@+id/btn_shortest_path"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_btn"
+            android:id="@+id/mdf_2"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

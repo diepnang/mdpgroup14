@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="30%"
+        android:id="@+id/layout_start_coord"
+        android:padding="8dp">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Start Coordinate"
+            android:layout_alignParentTop="true"
+            android:id="@+id/start_coord_label"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X:"
+            android:textSize="24sp"
+            android:paddingTop="8dp"
+            android:layout_below="@id/start_coord_label"
+            android:id="@+id/coordX_input_label"/>
+        <EditText
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_coord_label"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/coordX_input_label"
+            android:id="@+id/coordX_input_field"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y:"
+            android:textSize="24sp"
+            android:paddingTop="8dp"
+            android:layout_below="@id/coordX_input_label"
+            android:id="@+id/coordY_input_label"/>
+        <EditText
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coordX_input_field"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/coordY_input_label"
+            android:id="@+id/coordY_input_field"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="70%"
+        android:layout_marginLeft="28dp"
+        android:id="@+id/layout_robot_head"
+        android:layout_toEndOf="@id/layout_start_coord">
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/robotTx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:textSize="24sp"
+            android:text="Robot Head Position: "/>
+        <RadioGroup
+            android:id="@+id/robotInitHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/robotTx3" >
+
+            <RadioButton
+                android:id="@+id/robotUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:checked="true"
+                android:text="Up"/>
+
+            <RadioButton
+                android:id="@+id/robotDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Down"/>
+
+            <RadioButton
+                android:id="@+id/robotLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Left"/>
+
+            <RadioButton
+                android:id="@+id/robotRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Right"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_robot_head">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Update"
+            android:id="@+id/btn_update_start_coord"/>
+    </RelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

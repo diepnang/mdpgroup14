@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mdpgroup14.com.mdpapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="8%"
+        android:layout_alignParentTop="true"
+        android:id="@+id/layout_top"
+        android:background="@drawable/bgbottom">
+        <include layout="@layout/content_top" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="67%"
+        android:layout_below="@id/layout_top"
+        android:id="@+id/layout_map"
+        android:background="@drawable/bgcenter"
+        android:padding="2dp">
+        <GridView
+            android:layout_width="391dp"
+            android:layout_height="510dp"
+            android:background="@color/black"
+            android:layout_centerInParent="true"
+            android:columnWidth="26dp"
+            android:numColumns="15"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:id="@+id/map_view"
+            android:stretchMode="none"
+            ></GridView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent="25%"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/content_bottom"/>
+
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

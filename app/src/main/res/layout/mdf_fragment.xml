@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="4dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent = "35%"
+        android:id="@+id/mdf_1"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_heightPercent = "35%"
+        android:id="@+id/mdf_2"
+        android:layout_below="@id/mdf_1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent = "30%"
+        android:text = "Load MDF StringS"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_load_mdf"/>
+</android.support.percent.PercentRelativeLayout>

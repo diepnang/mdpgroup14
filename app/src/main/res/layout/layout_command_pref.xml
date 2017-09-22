@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="F1: "
+            android:paddingTop="8dp"
+            android:id="@+id/F1_label"
+            android:layout_alignParentTop="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/F1_label"
+            android:id="@+id/F1_input"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="F2: "
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:id="@+id/F2_label"
+            android:layout_below="@id/F1_label"
+            />
+
+        <EditText
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/F2_label"
+            android:layout_below="@id/F1_label"
+            android:id="@+id/F2_input"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="F3: "
+            android:layout_marginTop="16dp"
+            android:paddingTop="8dp"
+            android:id="@+id/F3_label"
+            android:layout_below="@id/F2_label"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/F3_label"
+            android:layout_below="@id/F2_label"
+            android:id="@+id/F3_input"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/F3_label"
+            android:layout_marginTop="24dp"
+            android:textSize="24sp"
+            android:text="Save commands"
+            android:id="@+id/btn_save_cmd"/>
+    </RelativeLayout>
+</ScrollView>

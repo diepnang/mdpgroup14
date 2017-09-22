@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_widthPercent="30%"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_connection_state"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connection"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:id="@+id/connection_label"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/connection_feedback"
+            android:textAlignment="center"
+            android:layout_below="@id/connection_label"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_widthPercent="30%"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_robot_state"
+        android:layout_toRightOf="@id/layout_connection_state"
+
+        >
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="20sp"
+           android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:id="@+id/status_label" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_feedback"
+            android:textAlignment="center"
+            android:layout_below="@id/status_label"/>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        app:layout_widthPercent="40%"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_timer"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:id="@+id/timer_label"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timer"
+            android:textAlignment="center"
+            android:layout_below="@id/timer_label"/>
+
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>
